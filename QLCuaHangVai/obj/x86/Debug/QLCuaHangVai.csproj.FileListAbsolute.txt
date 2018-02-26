@@ -1,0 +1,7 @@
+E:\HK1-02\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.Login.resources
+E:\HK1-02\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.Properties.Resources.resources
+E:\HK1-02\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.csproj.GenerateResource.Cache
+E:\HK1-02\QLCuaHangVai\QLCuaHangVai\bin\Debug\QLCuaHangVai.exe
+E:\HK1-02\QLCuaHangVai\QLCuaHangVai\bin\Debug\QLCuaHangVai.pdb
+E:\HK1-02\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.exe
+E:\HK1-02\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.pdb
