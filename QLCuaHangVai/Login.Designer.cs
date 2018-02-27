@@ -32,9 +32,9 @@
             this.btLoginQuanLy = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btLoginNhanVien = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -45,6 +45,7 @@
             this.btLoginQuanLy.ForeColor = System.Drawing.Color.Navy;
             this.btLoginQuanLy.Name = "btLoginQuanLy";
             this.btLoginQuanLy.UseVisualStyleBackColor = false;
+            this.btLoginQuanLy.Click += new System.EventHandler(this.btLoginQuanLy_Click);
             // 
             // label1
             // 
@@ -59,11 +60,12 @@
             this.btLoginNhanVien.ForeColor = System.Drawing.Color.Navy;
             this.btLoginNhanVien.Name = "btLoginNhanVien";
             this.btLoginNhanVien.UseVisualStyleBackColor = false;
+            this.btLoginNhanVien.Click += new System.EventHandler(this.btLoginNhanVien_Click);
             // 
-            // textBox1
+            // txtID
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
+            resources.ApplyResources(this.txtID, "txtID");
+            this.txtID.Name = "txtID";
             // 
             // label2
             // 
@@ -71,10 +73,11 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label2.Name = "label2";
             // 
-            // textBox2
+            // txtPass
             // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
+            resources.ApplyResources(this.txtPass, "txtPass");
+            this.txtPass.Name = "txtPass";
+            this.txtPass.UseSystemPasswordChar = true;
             // 
             // label3
             // 
@@ -88,8 +91,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPass);
+            this.Controls.Add(this.txtID);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btLoginNhanVien);
             this.Controls.Add(this.btLoginQuanLy);
@@ -108,9 +111,9 @@
         private System.Windows.Forms.Button btLoginQuanLy;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btLoginNhanVien;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Label label3;
     }
 }
