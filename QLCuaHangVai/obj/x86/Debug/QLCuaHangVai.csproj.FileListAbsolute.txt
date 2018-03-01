@@ -10,3 +10,5 @@ E:\HK1-02\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.csprojResolveAsse
 E:\HK1-02\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.QLNhanVien.resources
 E:\HK1-02\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.TinhLoiNhuan.resources
 E:\HK1-02\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.XuatNhapTonKho.resources
+D:\Tester\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.exe
+D:\Tester\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.pdb
