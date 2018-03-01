@@ -65,6 +65,14 @@ namespace QLCuaHangVai
                 MessageBox.Show("Error", "Tài khoản không hợp lệ");
         }
 
+        private void Login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Bạn đang cố gắng thoát khỏi hệ thống?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
+
        
     }
 }

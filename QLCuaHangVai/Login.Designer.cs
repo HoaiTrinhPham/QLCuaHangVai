@@ -101,6 +101,7 @@
             this.MinimizeBox = false;
             this.Name = "Login";
             this.ShowIcon = false;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

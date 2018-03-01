@@ -7,3 +7,6 @@ E:\HK1-02\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.exe
 E:\HK1-02\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.pdb
 E:\HK1-02\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.TrangChu.resources
 E:\HK1-02\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.csprojResolveAssemblyReference.cache
+E:\HK1-02\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.QLNhanVien.resources
+E:\HK1-02\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.TinhLoiNhuan.resources
+E:\HK1-02\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.XuatNhapTonKho.resources
