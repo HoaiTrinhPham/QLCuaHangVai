@@ -33,17 +33,17 @@ namespace QLCuaHangVai
 
         private void tínhLợiNhuậnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            (new TinhLoiNhuan()).Show();
         }
 
         private void xuấtNhậpTồnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            (new XuatNhapTonKho()).Show();
         }
 
         private void quảnLýNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            (new QLNhanVien()).Show();
         }
 
        
