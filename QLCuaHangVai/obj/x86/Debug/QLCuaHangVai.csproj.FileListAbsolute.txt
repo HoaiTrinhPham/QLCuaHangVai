@@ -10,3 +10,17 @@ E:\HK1-02\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.csprojResolveAsse
 E:\HK1-02\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.QLNhanVien.resources
 E:\HK1-02\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.TinhLoiNhuan.resources
 E:\HK1-02\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.XuatNhapTonKho.resources
+D:\Tester\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.exe
+D:\Tester\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.pdb
+D:\Tester\QLCuaHangVai\QLCuaHangVai\bin\Debug\QLCuaHangVai.exe
+D:\Tester\QLCuaHangVai\QLCuaHangVai\bin\Debug\QLCuaHangVai.pdb
+D:\Tester\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.csprojResolveAssemblyReference.cache
+D:\Tester\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.Login.resources
+D:\Tester\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.Properties.Resources.resources
+D:\Tester\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.QLNhanVien.resources
+D:\Tester\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.TinhLoiNhuan.resources
+D:\Tester\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.TrangChu.resources
+D:\Tester\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.XuatNhapTonKho.resources
+D:\Tester\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.csproj.GenerateResource.Cache
+D:\Tester\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.TonKho.resources
+E:\HK1-02\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.TonKho.resources
