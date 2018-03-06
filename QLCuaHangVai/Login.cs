@@ -19,6 +19,17 @@ namespace QLCuaHangVai
             InitializeComponent();
         }
 
+        bool checkUser(string str)
+        {
+            if (str == null)
+                return false;
+            if (str == "")
+                return false;
+            if (str.Length > 20)
+                return false;
+            return true;
+        }
+
         private void btLoginQuanLy_Click(object sender, EventArgs e)
         {
             string str = "Server=.; Database = QLCuaHangVai;Integrated Security = true;";
@@ -27,15 +38,21 @@ namespace QLCuaHangVai
             cmd = new SqlCommand("LoginQuanLy",con);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@ID",txtID.Text);
-            string tmp = cmd.ExecuteScalar().ToString();
-            if (tmp != "")
+            if (checkUser(txtID.Text))
             {
-                if (txtPass.Text == tmp)
+                string tmp = cmd.ExecuteScalar().ToString();
+                if (tmp != "")
                 {
-                    TrangChu f = new TrangChu();
-                    f.ShowDialog();
-                   
+                    if (txtPass.Text == tmp)
+                    {
+                        TrangChu f = new TrangChu();
+                        f.ShowDialog();
+                    }
+                    else
+                        MessageBox.Show("Error", "Tài khoản không hợp lệ");
                 }
+                else
+                    MessageBox.Show("Error", "Tài khoản không hợp lệ");
             }
             else
                 MessageBox.Show("Error", "Tài khoản không hợp lệ");
@@ -51,18 +68,26 @@ namespace QLCuaHangVai
             cmd = new SqlCommand("LoginNhanVien", con);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@ID", txtID.Text);
-            string tmp = cmd.ExecuteScalar().ToString();
-            if (tmp != "")
+            if (checkUser(txtID.Text))
             {
-                if (txtPass.Text == tmp)
+                string tmp = cmd.ExecuteScalar().ToString();
+                if (tmp != "")
                 {
-                    TrangChu f = new TrangChu(1);
-                    f.ShowDialog();
+                    if (txtPass.Text == tmp)
+                    {
+                        TrangChu f = new TrangChu(1);
+                        f.ShowDialog();
 
+                    }
+                    else
+                        MessageBox.Show("Error", "Tài khoản không hợp lệ");
                 }
+                else
+                    MessageBox.Show("Error", "Tài khoản không hợp lệ");
             }
             else
                 MessageBox.Show("Error", "Tài khoản không hợp lệ");
+
         }
 
         private void Login_FormClosing(object sender, FormClosingEventArgs e)
