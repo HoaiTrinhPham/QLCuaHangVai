@@ -215,6 +215,9 @@
   <data name="txtID.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
+  <data name="txtID.Text" xml:space="preserve">
+    <value>123456</value>
+  </data>
   <data name="&gt;&gt;txtID.Name" xml:space="preserve">
     <value>txtID</value>
   </data>
@@ -268,6 +271,9 @@
   </data>
   <data name="txtPass.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
+  </data>
+  <data name="txtPass.Text" xml:space="preserve">
+    <value>123</value>
   </data>
   <data name="&gt;&gt;txtPass.Name" xml:space="preserve">
     <value>txtPass</value>
