@@ -216,7 +216,7 @@
     <value>2</value>
   </data>
   <data name="txtID.Text" xml:space="preserve">
-    <value>123456</value>
+    <value>hoaitrinh</value>
   </data>
   <data name="&gt;&gt;txtID.Name" xml:space="preserve">
     <value>txtID</value>
@@ -273,7 +273,7 @@
     <value>2</value>
   </data>
   <data name="txtPass.Text" xml:space="preserve">
-    <value>123</value>
+    <value>12345</value>
   </data>
   <data name="&gt;&gt;txtPass.Name" xml:space="preserve">
     <value>txtPass</value>

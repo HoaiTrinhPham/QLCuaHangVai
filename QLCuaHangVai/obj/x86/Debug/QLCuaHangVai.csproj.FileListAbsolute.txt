@@ -23,3 +23,4 @@ D:\Tester\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.TrangChu.resource
 D:\Tester\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.XuatNhapTonKho.resources
 D:\Tester\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.csproj.GenerateResource.Cache
 D:\Tester\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.TonKho.resources
+E:\HK1-02\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.TonKho.resources
