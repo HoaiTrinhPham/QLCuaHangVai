@@ -87,6 +87,7 @@ namespace QLCuaHangVai
             }
             else
                 MessageBox.Show("Error", "Tài khoản không hợp lệ");
+            con.Close();
 
         }
 
