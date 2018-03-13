@@ -19,7 +19,7 @@ namespace QLCuaHangVai
                 return str;
             } 
         }
-        string getImages(string ID, string loai)
+        public string getImages(string ID, string loai)
         {
             con = new SqlConnection(str);
             con.Open();
