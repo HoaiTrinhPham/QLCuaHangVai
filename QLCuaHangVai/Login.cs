@@ -14,7 +14,7 @@ namespace QLCuaHangVai
     {
         SqlConnection con;
         SqlCommand cmd;
-        string str = (new DungChung()).ConnectionString;
+        
         public Login()
         {
             InitializeComponent();
@@ -35,7 +35,7 @@ namespace QLCuaHangVai
         {
             try
             {
-                con = new SqlConnection(str);
+                con = new SqlConnection("Server=.; Database = QLCuaHangVai;Integrated Security = true;");
                 con.Open();
                 cmd = new SqlCommand("LoginQuanLy", con);
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -72,7 +72,7 @@ namespace QLCuaHangVai
 
         private void btLoginNhanVien_Click(object sender, EventArgs e)
         {
-            con = new SqlConnection(str);
+            con = new SqlConnection("Server=.; Database = QLCuaHangVai;Integrated Security = true;");
             con.Open();
             cmd = new SqlCommand("LoginNhanVien", con);
             cmd.CommandType = CommandType.StoredProcedure;
