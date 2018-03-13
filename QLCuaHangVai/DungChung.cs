@@ -11,9 +11,16 @@ namespace QLCuaHangVai
     {
         SqlConnection con;
         SqlCommand cmd;
+        static string str = "Server=.; Database = QLCuaHangVai;Integrated Security = true;";
+        public string ConnectionString 
+        { 
+            get 
+            {
+                return str;
+            } 
+        }
         string getImages(string ID, string loai)
         {
-            string str = "Server=.; Database = QLCuaHangVai;Integrated Security = true;";
             con = new SqlConnection(str);
             con.Open();
             if(loai == "NhanVien")

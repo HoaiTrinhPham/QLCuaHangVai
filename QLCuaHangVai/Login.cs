@@ -14,6 +14,7 @@ namespace QLCuaHangVai
     {
         SqlConnection con;
         SqlCommand cmd;
+        string str = (new DungChung()).ConnectionString;
         public Login()
         {
             InitializeComponent();
@@ -32,37 +33,45 @@ namespace QLCuaHangVai
 
         private void btLoginQuanLy_Click(object sender, EventArgs e)
         {
-            string str = "Server=.; Database = QLCuaHangVai;Integrated Security = true;";
-            con = new SqlConnection(str);
-            con.Open();
-            cmd = new SqlCommand("LoginQuanLy",con);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@ID",txtID.Text);
-            if (checkUser(txtID.Text))
+            try
             {
-                string tmp = cmd.ExecuteScalar().ToString();
-                if (tmp != "")
+                con = new SqlConnection(str);
+                con.Open();
+                cmd = new SqlCommand("LoginQuanLy", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@ID", txtID.Text);
+                if (checkUser(txtID.Text))
                 {
-                    if (txtPass.Text == tmp)
+                    string tmp = cmd.ExecuteScalar().ToString();
+                    if (tmp != "")
                     {
-                        TrangChu f = new TrangChu();
-                        f.ShowDialog();
+                        if (txtPass.Text == tmp)
+                        {
+                            TrangChu f = new TrangChu();
+                            f.ShowDialog();
+                        }
+                        else
+                            MessageBox.Show("Error", "Tài khoản không hợp lệ");
                     }
                     else
                         MessageBox.Show("Error", "Tài khoản không hợp lệ");
                 }
                 else
                     MessageBox.Show("Error", "Tài khoản không hợp lệ");
+                con.Close();
+
             }
-            else
-                MessageBox.Show("Error", "Tài khoản không hợp lệ");
-            con.Close();
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error",ex.ToString());
+            }
+
 
         }
 
         private void btLoginNhanVien_Click(object sender, EventArgs e)
         {
-            string str = "Server=.; Database = QLCuaHangVai;Integrated Security = true;";
             con = new SqlConnection(str);
             con.Open();
             cmd = new SqlCommand("LoginNhanVien", con);

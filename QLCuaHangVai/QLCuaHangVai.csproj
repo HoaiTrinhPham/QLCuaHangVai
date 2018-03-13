@@ -115,9 +115,6 @@
     <EmbeddedResource Include="TinhLoiNhuan.resx">
       <DependentUpon>TinhLoiNhuan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TonKho.resx">
-      <DependentUpon>TonKho.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="TrangChu.resx">
       <DependentUpon>TrangChu.cs</DependentUpon>
     </EmbeddedResource>
