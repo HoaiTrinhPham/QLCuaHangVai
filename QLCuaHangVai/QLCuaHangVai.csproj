@@ -35,6 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -72,6 +73,12 @@
     </Compile>
     <Compile Include="TinhLoiNhuan.Designer.cs">
       <DependentUpon>TinhLoiNhuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TinhLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TinhLuong.Designer.cs">
+      <DependentUpon>TinhLuong.cs</DependentUpon>
     </Compile>
     <Compile Include="TonKho.cs">
       <SubType>Form</SubType>
@@ -115,12 +122,16 @@
     <EmbeddedResource Include="TinhLoiNhuan.resx">
       <DependentUpon>TinhLoiNhuan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TinhLuong.resx">
+      <DependentUpon>TinhLuong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TrangChu.resx">
       <DependentUpon>TrangChu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XuatNhapTonKho.resx">
       <DependentUpon>XuatNhapTonKho.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="App.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

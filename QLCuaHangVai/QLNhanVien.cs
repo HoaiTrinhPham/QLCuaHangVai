@@ -21,17 +21,7 @@ namespace QLCuaHangVai
             InitializeComponent();
             
         }
-        public class NhanVien
-        {
-            
-            public int STT { get; set; }
-            public string ID { get; set; }
-            public string Ho { get; set; }
-            public string Ten { get; set; }
-            public string GioVao { get; set; }
-            public string GioRa { get; set; }
-            public string GioLuong { get; set; }
-        }
+        
         private void QLNhanVien_Load(object sender, EventArgs e)
         {
             DungChung t = new DungChung();
@@ -48,10 +38,12 @@ namespace QLCuaHangVai
             txtID.DataBindings.Add("Text", dgvNhanVien.DataSource, "ID");
             txtSTT.DataBindings.Add("Text", dgvNhanVien.DataSource, "STT");
             txtDate.Text = (DateTime.Now).ToString();
+            
         }
 
         void loadData()
         {
+
             con = new SqlConnection(str);
             cmd = new SqlCommand("select * from NhanVien", con);
             con.Open();
@@ -68,9 +60,9 @@ namespace QLCuaHangVai
                 list.Add(db);
             }
             dgvNhanVien.DataSource = list;
-            
+         
             con.Close();
-            
+           
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -80,6 +72,7 @@ namespace QLCuaHangVai
 
         private void btChamCong_Click(object sender, EventArgs e)
         {
+            list[getChiSo(txtSTT.Text.ToString())].GioRa = "12:00:00";
             con = new SqlConnection(str);
             cmd = new SqlCommand("getGioCong", con);
             cmd.CommandType = CommandType.StoredProcedure;
@@ -94,6 +87,7 @@ namespace QLCuaHangVai
                 cmd2.Parameters.Add("@ID", txtID.Text);
                 cmd2.Parameters.Add("giaTriMoi", a);
                 cmd2.ExecuteNonQuery();
+               
             }
             catch (SqlException ex)
             {
@@ -101,9 +95,6 @@ namespace QLCuaHangVai
             }
             
             con.Close();
-
-            loadData();
-            
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -144,6 +135,11 @@ namespace QLCuaHangVai
                 return gioCong;
             }
             return 0;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            (new TinhLuong()).Show();
         }
     }
 }
