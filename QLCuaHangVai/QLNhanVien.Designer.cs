@@ -39,20 +39,19 @@
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ho = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ten = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.txtHoTen = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtGioRa = new System.Windows.Forms.TextBox();
-            this.txtGioVao = new System.Windows.Forms.TextBox();
             this.txtTen = new System.Windows.Forms.Label();
             this.btChamCong = new System.Windows.Forms.Button();
             this.txtDate = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtSTT = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.picAnhDaiDien)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
@@ -82,7 +81,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Navy;
-            this.label1.Location = new System.Drawing.Point(286, 38);
+            this.label1.Location = new System.Drawing.Point(296, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(227, 24);
             this.label1.TabIndex = 1;
@@ -93,12 +92,13 @@
             this.button1.BackColor = System.Drawing.Color.DeepPink;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(672, 12);
+            this.button1.Location = new System.Drawing.Point(613, 20);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 37);
             this.button1.TabIndex = 3;
             this.button1.Text = "Tính lương";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox1
             // 
@@ -120,11 +120,10 @@
             this.ID,
             this.Ho,
             this.Ten,
-            this.Column6,
-            this.Column7});
-            this.dgvNhanVien.Location = new System.Drawing.Point(81, 196);
+            this.GioLuong});
+            this.dgvNhanVien.Location = new System.Drawing.Point(101, 194);
             this.dgvNhanVien.Name = "dgvNhanVien";
-            this.dgvNhanVien.Size = new System.Drawing.Size(643, 180);
+            this.dgvNhanVien.Size = new System.Drawing.Size(533, 180);
             this.dgvNhanVien.TabIndex = 5;
             // 
             // STT
@@ -151,16 +150,11 @@
             this.Ten.HeaderText = "Tên";
             this.Ten.Name = "Ten";
             // 
-            // Column6
+            // GioLuong
             // 
-            this.Column6.HeaderText = "Giờ vào";
-            this.Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Giờ ra";
-            this.Column7.Name = "Column7";
-            this.Column7.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.GioLuong.DataPropertyName = "GioLuong";
+            this.GioLuong.HeaderText = "Giờ công";
+            this.GioLuong.Name = "GioLuong";
             // 
             // label2
             // 
@@ -195,54 +189,16 @@
             // 
             this.txtID.AutoSize = true;
             this.txtID.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.Location = new System.Drawing.Point(243, 122);
+            this.txtID.Location = new System.Drawing.Point(217, 122);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(60, 19);
             this.txtID.TabIndex = 6;
             this.txtID.Text = "hoaitrinh";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(422, 85);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 19);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Giờ vào: ";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(422, 122);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 19);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Giờ ra: ";
-            // 
-            // txtGioRa
-            // 
-            this.txtGioRa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGioRa.Location = new System.Drawing.Point(506, 119);
-            this.txtGioRa.Multiline = true;
-            this.txtGioRa.Name = "txtGioRa";
-            this.txtGioRa.Size = new System.Drawing.Size(158, 20);
-            this.txtGioRa.TabIndex = 7;
-            // 
-            // txtGioVao
-            // 
-            this.txtGioVao.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGioVao.Location = new System.Drawing.Point(506, 85);
-            this.txtGioVao.Multiline = true;
-            this.txtGioVao.Name = "txtGioVao";
-            this.txtGioVao.Size = new System.Drawing.Size(158, 20);
-            this.txtGioVao.TabIndex = 7;
-            // 
             // txtTen
             // 
             this.txtTen.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTen.Location = new System.Drawing.Point(348, 85);
+            this.txtTen.Location = new System.Drawing.Point(344, 85);
             this.txtTen.Name = "txtTen";
             this.txtTen.Size = new System.Drawing.Size(68, 19);
             this.txtTen.TabIndex = 6;
@@ -251,7 +207,7 @@
             // btChamCong
             // 
             this.btChamCong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btChamCong.Location = new System.Drawing.Point(672, 89);
+            this.btChamCong.Location = new System.Drawing.Point(592, 89);
             this.btChamCong.Name = "btChamCong";
             this.btChamCong.Size = new System.Drawing.Size(85, 40);
             this.btChamCong.TabIndex = 8;
@@ -261,13 +217,13 @@
             // 
             // txtDate
             // 
-            this.txtDate.AutoSize = true;
             this.txtDate.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDate.Location = new System.Drawing.Point(365, 159);
+            this.txtDate.Location = new System.Drawing.Point(259, 159);
             this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(43, 19);
+            this.txtDate.Size = new System.Drawing.Size(216, 19);
             this.txtDate.TabIndex = 6;
             this.txtDate.Text = "Time";
+            this.txtDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // timer1
             // 
@@ -275,20 +231,65 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(296, 122);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(42, 19);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "STT:";
+            // 
+            // txtSTT
+            // 
+            this.txtSTT.AutoSize = true;
+            this.txtSTT.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSTT.Location = new System.Drawing.Point(338, 122);
+            this.txtSTT.Name = "txtSTT";
+            this.txtSTT.Size = new System.Drawing.Size(60, 19);
+            this.txtSTT.TabIndex = 6;
+            this.txtSTT.Text = "hoaitrinh";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(465, 81);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(83, 23);
+            this.checkBox1.TabIndex = 9;
+            this.checkBox1.Text = "Checkin";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox2.Location = new System.Drawing.Point(465, 118);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(92, 23);
+            this.checkBox2.TabIndex = 9;
+            this.checkBox2.Text = "Checkout";
+            this.checkBox2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            // 
             // QLNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(798, 421);
+            this.ClientSize = new System.Drawing.Size(734, 386);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.btChamCong);
-            this.Controls.Add(this.txtGioVao);
-            this.Controls.Add(this.txtGioRa);
+            this.Controls.Add(this.txtSTT);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtTen);
             this.Controls.Add(this.txtHoTen);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.txtDate);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dgvNhanVien);
@@ -316,23 +317,22 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dgvNhanVien;
-        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ho;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ten;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label txtHoTen;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label txtID;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtGioRa;
-        private System.Windows.Forms.TextBox txtGioVao;
         private System.Windows.Forms.Label txtTen;
         private System.Windows.Forms.Button btChamCong;
         private System.Windows.Forms.Label txtDate;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label txtSTT;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ho;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ten;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GioLuong;
     }
 }
