@@ -26,4 +26,17 @@ namespace QLCuaHangVai
             return tmp;
         }
     }
+    public class NhanVien
+    {
+
+        public int STT { get; set; }
+        public string ID { get; set; }
+        public string Ho { get; set; }
+        public string Ten { get; set; }
+        public string GioVao { get; set; }
+        public string GioRa { get; set; }
+        public string GioLuong { get; set; }
+        public string TienCong { get; set; }
+        public string Luong { get; set; }
+    }
 }

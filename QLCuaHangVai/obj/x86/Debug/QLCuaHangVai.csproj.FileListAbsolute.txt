@@ -29,7 +29,6 @@ E:\HK1-02\XuatNhapTon\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.exe
 E:\HK1-02\XuatNhapTon\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.pdb
 E:\HK1-02\XuatNhapTon\QLCuaHangVai\QLCuaHangVai\bin\Debug\QLCuaHangVai.exe
 E:\HK1-02\XuatNhapTon\QLCuaHangVai\QLCuaHangVai\bin\Debug\QLCuaHangVai.pdb
-E:\HK1-02\XuatNhapTon\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.csprojResolveAssemblyReference.cache
 E:\HK1-02\XuatNhapTon\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.Login.resources
 E:\HK1-02\XuatNhapTon\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.Properties.Resources.resources
 E:\HK1-02\XuatNhapTon\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.QLNhanVien.resources
@@ -37,3 +36,6 @@ E:\HK1-02\XuatNhapTon\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.TinhL
 E:\HK1-02\XuatNhapTon\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.TrangChu.resources
 E:\HK1-02\XuatNhapTon\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.XuatNhapTonKho.resources
 E:\HK1-02\XuatNhapTon\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.csproj.GenerateResource.Cache
+E:\HK1-02\XuatNhapTon\QLCuaHangVai\QLCuaHangVai\bin\Debug\QLCuaHangVai.exe.config
+E:\HK1-02\XuatNhapTon\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.TinhLuong.resources
+E:\HK1-02\XuatNhapTon\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.NhapKho.resources
