@@ -38,5 +38,13 @@ namespace QLCuaHangVai
             t.MdiParent = this;
             t.Show();
         }
+
+        private void XuatNhapTonKho_Load(object sender, EventArgs e)
+        {
+            DungChung t = new DungChung();
+            string path = Application.StartupPath + @"\Images\";
+            picAnhDaiDien.Image = Image.FromFile(path + t.getImages("hoaitrinh", "NhanVien") + ".png");
+            txtMaNV.Text = txtMaNV.Text + " " + t.getImages("hoaitrinh", "NhanVien");
+        }
     }
 }
