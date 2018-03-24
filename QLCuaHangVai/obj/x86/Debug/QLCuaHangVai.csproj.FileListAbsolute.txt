@@ -39,3 +39,5 @@ E:\HK1-02\XuatNhapTon\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.cspro
 E:\HK1-02\XuatNhapTon\QLCuaHangVai\QLCuaHangVai\bin\Debug\QLCuaHangVai.exe.config
 E:\HK1-02\XuatNhapTon\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.TinhLuong.resources
 E:\HK1-02\XuatNhapTon\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.NhapKho.resources
+E:\HK1-02\XuatNhapTon\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.csprojResolveAssemblyReference.cache
+E:\HK1-02\XuatNhapTon\QLCuaHangVai\QLCuaHangVai\obj\x86\Debug\QLCuaHangVai.XuatKho.resources
