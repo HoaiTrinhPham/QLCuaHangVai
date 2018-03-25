@@ -10,10 +10,10 @@ namespace QLCuaHangVai
 {
     public class DungChung
     {
-        SqlConnection con;
+        public SqlConnection con;
         SqlCommand cmd;
 
-        public string connect()
+        public SqlConnection connect()
         {
             con = new SqlConnection(ConfigurationManager.ConnectionStrings["CSDL"].ConnectionString);
             try
@@ -23,9 +23,9 @@ namespace QLCuaHangVai
             }
             catch (SqlException ex)
             {
-                return ex.ToString();
+                return null;
             }
-            return null;
+            return con;
         }
 
         public string disConnect()
