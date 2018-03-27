@@ -10,10 +10,10 @@ namespace QLCuaHangVai
 {
     public class DungChung
     {
-        SqlConnection con;
+        public SqlConnection con;
         SqlCommand cmd;
 
-        public string connect()
+        public SqlConnection connect()
         {
             con = new SqlConnection(ConfigurationManager.ConnectionStrings["CSDL"].ConnectionString);
             try
@@ -23,9 +23,9 @@ namespace QLCuaHangVai
             }
             catch (SqlException ex)
             {
-                return ex.ToString();
+                return null;
             }
-            return null;
+            return con;
         }
 
         public string disConnect()
@@ -48,6 +48,20 @@ namespace QLCuaHangVai
             disConnect();
             return tmp;
         }
+        public bool CheckMaHH(string txtMa)
+        {
+            if (txtMa == null || txtMa.Length > 10 || txtMa == "")
+            {
+                return false;
+            }
+            return true;
+        }
+        public bool CheckSoLuong(string txtSoLuong)
+        {
+            if (txtSoLuong == null || txtSoLuong == "")
+                return false;
+            return true;
+        }
     }
     public class NhanVien
     {
@@ -62,4 +76,6 @@ namespace QLCuaHangVai
         public string TienCong { get; set; }
         public string Luong { get; set; }
     }
+
+ 
 }
