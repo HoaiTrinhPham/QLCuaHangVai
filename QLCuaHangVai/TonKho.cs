@@ -32,14 +32,18 @@ namespace QLCuaHangVai
 
         private void bttim_Click(object sender, EventArgs e)
         {
-            tool.connect();
-            DataTable tbq = new DataTable();
-            da = new SqlDataAdapter("kiemTraHangTon", tool.con);
-            da.SelectCommand.CommandType = CommandType.StoredProcedure;
-            da.SelectCommand.Parameters.Add("@Ma", txtMa.Text);
-            da.Fill(tbq);
-            dgvView.DataSource = tbq;
-            tool.disConnect();
+            if (tool.CheckMaHH(txtMa.Text) && tool.SearchMa(txtMa.Text))
+            {
+                tool.connect();
+                DataTable tbq = new DataTable();
+                da = new SqlDataAdapter("kiemTraHangTon", tool.con);
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                da.SelectCommand.Parameters.Add("@Ma", txtMa.Text);
+                da.Fill(tbq);
+                dgvView.DataSource = tbq;
+                tool.disConnect();
+            }else
+                MessageBox.Show("Mã chưa đúng!");
         }
     }
 }

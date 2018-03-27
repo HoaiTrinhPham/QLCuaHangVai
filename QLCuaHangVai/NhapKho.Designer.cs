@@ -217,6 +217,7 @@
             this.Name = "NhapKho";
             this.ShowIcon = false;
             this.Text = "Nhập kho";
+            this.Load += new System.EventHandler(this.NhapKho_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
