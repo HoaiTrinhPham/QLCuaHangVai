@@ -44,13 +44,18 @@ namespace QLCuaHangVai
 
         private void button1_Click(object sender, EventArgs e)
         {
-            tool.connect();
-            cmd = new SqlCommand("XuatHang", tool.con);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@Ma", txtMa.SelectedValue.ToString());
-            cmd.Parameters.Add("@SoLuong", txtSoLuong.Text);
-            cmd.ExecuteNonQuery();
-            tool.disConnect();
+            if (tool.CheckGetSoLuong(txtMa.SelectedValue.ToString(),txtSoLuong.Text))
+            {
+                tool.connect();
+                cmd = new SqlCommand("XuatHang", tool.con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@Ma", txtMa.SelectedValue.ToString());
+                cmd.Parameters.Add("@SoLuong", txtSoLuong.Text);
+                cmd.ExecuteNonQuery();
+                tool.disConnect();
+                MessageBox.Show("Hàng đã xuất!");
+            }else
+                MessageBox.Show("Số lượng sai!");
         }
 
     }
