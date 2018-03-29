@@ -13,6 +13,22 @@ namespace QLCuaHangVai
         public SqlConnection con;
         SqlCommand cmd;
 
+        public bool checkUser(string str)
+        {
+            if (str == null)
+                return false;
+            if (str == "")
+                return false;
+            if (str.Length > 20)
+                return false;
+            foreach (char c in str)
+            {
+                if (c == ' ' || c == '-' || c == '+')
+                    return false;
+            }
+            return true;
+        }
+
         public SqlConnection connect()
         {
             con = new SqlConnection(ConfigurationManager.ConnectionStrings["CSDL"].ConnectionString);
@@ -48,6 +64,112 @@ namespace QLCuaHangVai
             disConnect();
             return tmp;
         }
+        public bool CheckMaHH(string txtMa)
+        {
+            if (txtMa == null || txtMa.Length > 10 || txtMa == "")
+            {
+                return false;
+            }
+            return true;
+        }
+        public bool CheckSoLuong(string txtSoLuong)
+        {
+            if (txtSoLuong == null || txtSoLuong == "")
+                return false;
+            return true;
+        }
+
+        public bool CheckTenVai(string txtTenVai)
+        {
+            if (txtTenVai == null || txtTenVai == "")
+                return false;
+            return true;
+        }
+        public bool CheckMauVai(string txtMauVai)
+        {
+            if (txtMauVai == null || txtMauVai == "")
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        public bool CheckLoaiVai(string txtLoaiVai)
+        {
+            if (txtLoaiVai == null || txtLoaiVai == "")
+                return false;
+            return true;
+        }
+
+        public bool CheckDonGia(string txtDonGia)
+        {
+            if (txtDonGia == null || txtDonGia == "")
+                return false;
+            return true;
+        }
+
+        protected bool checkSo(char c)
+        {
+            return c >= '0' && c <= '9';
+        }
+
+        public bool CheckGetSoLuong(string txtMa, string txtSL)
+        {
+            if (txtSL == null || txtSL == "")
+                return false;
+
+            foreach (char c in txtSL)
+            {
+                if (checkSo(c) == false)
+                    return false;
+            }
+            int SL = Int16.Parse(txtSL);
+           
+            connect();
+            cmd = new SqlCommand("KiemTraHangTon", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@Ma", txtMa);
+            SqlDataReader dr = cmd.ExecuteReader();
+            int SLTon = 0;
+            while (dr.Read())
+            {
+                SLTon = Int16.Parse(dr["SoLuong"].ToString());
+                break;
+            }
+            if (SL <= 0 || SL > SLTon)
+                return false;
+            disConnect();
+            return true;
+        }
+        public bool SearchMa(string txtMa)
+        {
+            connect();
+            cmd = new SqlCommand("KiemTraHangTon", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@Ma", txtMa);
+            object tmp = cmd.ExecuteScalar();
+            if (tmp == null)
+            {
+                disConnect();
+                return false;
+            }
+            foreach (char c in txtMa)
+            {
+                if (c == ' ' || c == '-' || c == '+')
+                    return false;
+            }
+            return true;
+        }
+        public int getChiSo(string txt)
+        {
+            foreach (char c in txt)
+            {
+                if (c < '0' || c > '9')
+                    return -1;
+            }
+            return Int16.Parse(txt) - 1;
+        }
     }
     public class NhanVien
     {
@@ -62,4 +184,6 @@ namespace QLCuaHangVai
         public string TienCong { get; set; }
         public string Luong { get; set; }
     }
+
+ 
 }
