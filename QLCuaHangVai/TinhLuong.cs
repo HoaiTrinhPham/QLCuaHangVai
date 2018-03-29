@@ -15,7 +15,8 @@ namespace QLCuaHangVai
     {
         SqlConnection con;
         SqlCommand cmd;
-        List<NhanVien> list = new List<NhanVien>();
+        DungChung tool;
+        List<NhanVien> list;
         double tongLuong = 0;
         public TinhLuong()
         {
@@ -37,11 +38,11 @@ namespace QLCuaHangVai
 
         void loadDataMotNhanVien()
         {
-            con = new SqlConnection(ConfigurationManager.ConnectionStrings["CSDL"].ConnectionString);
-            cmd = new SqlCommand("TTMotNhanVien", con);
+            list = new List<NhanVien>();
+            tool.connect();
+            cmd = new SqlCommand("TTMotNhanVien", tool.con);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("@ID", txtMaNV.Text.ToString());
-            con.Open();
             SqlDataReader da = cmd.ExecuteReader();
             int i = 1;
             while (da.Read())
@@ -56,21 +57,20 @@ namespace QLCuaHangVai
                 double tmp = Convert.ToDouble(db.GioLuong);
                 double tmp2 = Convert.ToDouble(db.TienCong);
                 db.Luong = (tmp * tmp2).ToString();
-
+                tongLuong += tmp * tmp2;
                 list.Add(db);
             }
             dgvNhanVien.DataSource = list;
-
-            con.Close();
+            txtTongLuong.Text = tongLuong.ToString();
+            tool.disConnect();
         }
 
         void loadData()
         {
-
-            con = new SqlConnection(ConfigurationManager.ConnectionStrings["CSDL"].ConnectionString);
-            cmd = new SqlCommand("TTNhanVien", con);
+            list = new List<NhanVien>();
+            tool.connect();
+            cmd = new SqlCommand("TTNhanVien", tool.con);
             cmd.CommandType = CommandType.StoredProcedure;
-            con.Open();
             SqlDataReader da = cmd.ExecuteReader();
             int i = 1;
             while (da.Read())
@@ -90,8 +90,23 @@ namespace QLCuaHangVai
             }
             dgvNhanVien.DataSource = list;
             txtTongLuong.Text = tongLuong.ToString();
-            con.Close();
+            tool.disConnect();
 
+        }
+
+        private void rdTungNV_CheckedChanged(object sender, EventArgs e)
+        {
+            txtMaNV.Enabled = true;
+        }
+
+        private void rdAll_CheckedChanged(object sender, EventArgs e)
+        {
+            txtMaNV.Enabled = false;
+        }
+
+        private void TinhLuong_Load(object sender, EventArgs e)
+        {
+            tool = new DungChung();
         }
     }
 }
