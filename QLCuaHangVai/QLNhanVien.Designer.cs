@@ -50,8 +50,8 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label4 = new System.Windows.Forms.Label();
             this.txtSTT = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.cbCheckin = new System.Windows.Forms.CheckBox();
+            this.cbCheckout = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.picAnhDaiDien)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
@@ -194,6 +194,7 @@
             this.txtID.Size = new System.Drawing.Size(60, 19);
             this.txtID.TabIndex = 6;
             this.txtID.Text = "hoaitrinh";
+            this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
             // 
             // txtTen
             // 
@@ -251,38 +252,38 @@
             this.txtSTT.TabIndex = 6;
             this.txtSTT.Text = "hoaitrinh";
             // 
-            // checkBox1
+            // cbCheckin
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(465, 81);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(83, 23);
-            this.checkBox1.TabIndex = 9;
-            this.checkBox1.Text = "Checkin";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.cbCheckin.AutoSize = true;
+            this.cbCheckin.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbCheckin.Location = new System.Drawing.Point(465, 81);
+            this.cbCheckin.Name = "cbCheckin";
+            this.cbCheckin.Size = new System.Drawing.Size(83, 23);
+            this.cbCheckin.TabIndex = 9;
+            this.cbCheckin.Text = "Checkin";
+            this.cbCheckin.UseVisualStyleBackColor = true;
+            this.cbCheckin.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // checkBox2
+            // cbCheckout
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(465, 118);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(92, 23);
-            this.checkBox2.TabIndex = 9;
-            this.checkBox2.Text = "Checkout";
-            this.checkBox2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            this.cbCheckout.AutoSize = true;
+            this.cbCheckout.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbCheckout.Location = new System.Drawing.Point(465, 118);
+            this.cbCheckout.Name = "cbCheckout";
+            this.cbCheckout.Size = new System.Drawing.Size(92, 23);
+            this.cbCheckout.TabIndex = 9;
+            this.cbCheckout.Text = "Checkout";
+            this.cbCheckout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cbCheckout.UseVisualStyleBackColor = true;
+            this.cbCheckout.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // QLNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(734, 386);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.cbCheckout);
+            this.Controls.Add(this.cbCheckin);
             this.Controls.Add(this.btChamCong);
             this.Controls.Add(this.txtSTT);
             this.Controls.Add(this.label4);
@@ -327,8 +328,8 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label txtSTT;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox cbCheckin;
+        private System.Windows.Forms.CheckBox cbCheckout;
         private System.Windows.Forms.DataGridViewTextBoxColumn STT;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ho;

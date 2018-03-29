@@ -13,6 +13,22 @@ namespace QLCuaHangVai
         public SqlConnection con;
         SqlCommand cmd;
 
+        public bool checkUser(string str)
+        {
+            if (str == null)
+                return false;
+            if (str == "")
+                return false;
+            if (str.Length > 20)
+                return false;
+            foreach (char c in str)
+            {
+                if (c == ' ' || c == '-' || c == '+')
+                    return false;
+            }
+            return true;
+        }
+
         public SqlConnection connect()
         {
             con = new SqlConnection(ConfigurationManager.ConnectionStrings["CSDL"].ConnectionString);
@@ -75,6 +91,7 @@ namespace QLCuaHangVai
             {
                 return false;
             }
+
             return true;
         }
 
@@ -137,7 +154,21 @@ namespace QLCuaHangVai
                 disConnect();
                 return false;
             }
+            foreach (char c in txtMa)
+            {
+                if (c == ' ' || c == '-' || c == '+')
+                    return false;
+            }
             return true;
+        }
+        public int getChiSo(string txt)
+        {
+            foreach (char c in txt)
+            {
+                if (c < '0' || c > '9')
+                    return -1;
+            }
+            return Int16.Parse(txt) - 1;
         }
     }
     public class NhanVien
