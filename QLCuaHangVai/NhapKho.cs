@@ -24,7 +24,8 @@ namespace QLCuaHangVai
         private void button1_Click(object sender, EventArgs e)
         {
             if (getCode.CheckMaHH(txtMa.Text) && getCode.CheckLoaiVai(txtLoai.Text) && getCode.CheckTenVai(txtTen.Text)
-                && getCode.CheckSoLuong(txtSL.Text) && getCode.CheckMauVai(txtMau.Text))
+                && getCode.CheckSoLuong(txtSL.Text.ToString())>-1 && getCode.CheckMauVai(txtMau.Text) && getCode.CheckDonGia(txtDonGia.Text)
+                && getCode.SearchMa(txtMa.Text)==false)
             {
                 getCode.connect();
                 cmd = new SqlCommand("ThemSP", getCode.con);
@@ -36,6 +37,7 @@ namespace QLCuaHangVai
                 cmd.Parameters.Add("@SoLuong", txtSL.Text);
                 cmd.Parameters.Add("@DonGia", txtDonGia.Text);
                 cmd.ExecuteNonQuery();
+                MessageBox.Show("Thêm thành công!");
                 getCode.disConnect();
             }
             else

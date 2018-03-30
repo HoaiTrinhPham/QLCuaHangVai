@@ -51,16 +51,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseSetup.cs" />
+    <Compile Include="DatabaseUnitTestsChamCong.cs">
+      <SubType>Designer</SubType>
+    </Compile>
     <Compile Include="DatabaseUnitTestsGetgioCong.cs">
       <SubType>Designer</SubType>
     </Compile>
     <Compile Include="DatabaseUnitTestsGetImage.cs">
       <SubType>Designer</SubType>
     </Compile>
+    <Compile Include="DatabaseUnitTestsGetSP.cs">
+      <SubType>Designer</SubType>
+    </Compile>
+    <Compile Include="DatabaseUnitTestsKiemTraHangTon.cs">
+      <SubType>Designer</SubType>
+    </Compile>
     <Compile Include="DatabaseUnitTestsLongin.cs">
       <SubType>Designer</SubType>
     </Compile>
     <Compile Include="DatabaseUnitTestsTTNhanVien.cs">
+      <SubType>Designer</SubType>
+    </Compile>
+    <Compile Include="DatabaseUnitTestsXuatHang.cs">
       <SubType>Designer</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -77,17 +89,29 @@
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DatabaseUnitTestsChamCong.resx">
+      <DependentUpon>DatabaseUnitTestsChamCong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DatabaseUnitTestsGetgioCong.resx">
       <DependentUpon>DatabaseUnitTestsGetgioCong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DatabaseUnitTestsGetImage.resx">
       <DependentUpon>DatabaseUnitTestsGetImage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseUnitTestsGetSP.resx">
+      <DependentUpon>DatabaseUnitTestsGetSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseUnitTestsKiemTraHangTon.resx">
+      <DependentUpon>DatabaseUnitTestsKiemTraHangTon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DatabaseUnitTestsLongin.resx">
       <DependentUpon>DatabaseUnitTestsLongin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DatabaseUnitTestsTTNhanVien.resx">
       <DependentUpon>DatabaseUnitTestsTTNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseUnitTestsXuatHang.resx">
+      <DependentUpon>DatabaseUnitTestsXuatHang.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
