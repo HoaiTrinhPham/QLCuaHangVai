@@ -1,8 +1,0 @@
-E:\HK1-02\QLNhanVien\QLCuaHangVai\QLCuaHangVai\CSDL_QLCuaHangVai\sql\debug\CSDL_QLCuaHangVai_Script.PreDeployment.sql
-E:\HK1-02\QLNhanVien\QLCuaHangVai\QLCuaHangVai\CSDL_QLCuaHangVai\sql\debug\CSDL_QLCuaHangVai_Script.PostDeployment.sql
-E:\HK1-02\QLNhanVien\QLCuaHangVai\QLCuaHangVai\CSDL_QLCuaHangVai\sql\debug\CSDL_QLCuaHangVai_Database.sqlsettings
-E:\HK1-02\QLNhanVien\QLCuaHangVai\QLCuaHangVai\CSDL_QLCuaHangVai\sql\debug\CSDL_QLCuaHangVai_Database.sqldeployment
-E:\HK1-02\QLNhanVien\QLCuaHangVai\QLCuaHangVai\CSDL_QLCuaHangVai\sql\debug\CSDL_QLCuaHangVai_Database.sqlcmdvars
-E:\HK1-02\QLNhanVien\QLCuaHangVai\QLCuaHangVai\CSDL_QLCuaHangVai\sql\debug\CSDL_QLCuaHangVai.deploymanifest
-E:\HK1-02\QLNhanVien\QLCuaHangVai\QLCuaHangVai\CSDL_QLCuaHangVai\sql\debug\CSDL_QLCuaHangVai.dbschema
-E:\HK1-02\QLNhanVien\QLCuaHangVai\QLCuaHangVai\CSDL_QLCuaHangVai\obj\Debug\CSDL_QLCuaHangVai.dbschema
