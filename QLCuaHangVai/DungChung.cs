@@ -70,13 +70,23 @@ namespace QLCuaHangVai
             {
                 return false;
             }
+            foreach (char c in txtMa)
+            {
+                if (c == ' ')
+                    return false;
+            }
             return true;
         }
-        public bool CheckSoLuong(string txtSoLuong)
+        public int CheckSoLuong(string txtSoLuong)
         {
             if (txtSoLuong == null || txtSoLuong == "")
-                return false;
-            return true;
+                return -1;
+            foreach (char c in txtSoLuong)
+            {
+                if (c == ' ' || checkSo(c) == false)
+                    return -1;
+            }
+            return Int16.Parse(txtSoLuong);
         }
 
         public bool CheckTenVai(string txtTenVai)
@@ -91,7 +101,6 @@ namespace QLCuaHangVai
             {
                 return false;
             }
-
             return true;
         }
 
@@ -106,6 +115,11 @@ namespace QLCuaHangVai
         {
             if (txtDonGia == null || txtDonGia == "")
                 return false;
+            foreach (char c in txtDonGia)
+            {
+                if (c == ' ' || checkSo(c) == false)
+                    return false;
+            }
             return true;
         }
 
@@ -114,18 +128,8 @@ namespace QLCuaHangVai
             return c >= '0' && c <= '9';
         }
 
-        public bool CheckGetSoLuong(string txtMa, string txtSL)
+        public int getSoLuong(string txtMa)
         {
-            if (txtSL == null || txtSL == "")
-                return false;
-
-            foreach (char c in txtSL)
-            {
-                if (checkSo(c) == false)
-                    return false;
-            }
-            int SL = Int16.Parse(txtSL);
-           
             connect();
             cmd = new SqlCommand("KiemTraHangTon", con);
             cmd.CommandType = CommandType.StoredProcedure;
@@ -137,10 +141,16 @@ namespace QLCuaHangVai
                 SLTon = Int16.Parse(dr["SoLuong"].ToString());
                 break;
             }
+            disConnect();
+            return SLTon;
+        }
+
+        public bool CheckGetSoLuong(int SLTon, int SL)
+        {        
             if (SL <= 0 || SL > SLTon)
                 return false;
-            disConnect();
             return true;
+          
         }
         public bool SearchMa(string txtMa)
         {
@@ -161,6 +171,7 @@ namespace QLCuaHangVai
             }
             return true;
         }
+        
         public int getChiSo(string txt)
         {
             foreach (char c in txt)

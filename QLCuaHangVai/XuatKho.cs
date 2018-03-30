@@ -44,7 +44,8 @@ namespace QLCuaHangVai
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (tool.CheckGetSoLuong(txtMa.SelectedValue.ToString(),txtSoLuong.Text))
+            if (tool.CheckSoLuong(txtSoLuong.Text)>-1 && 
+                tool.CheckGetSoLuong(tool.getSoLuong(txtMa.SelectedValue.ToString()),tool.CheckSoLuong(txtSoLuong.Text.ToString())))
             {
                 tool.connect();
                 cmd = new SqlCommand("XuatHang", tool.con);
