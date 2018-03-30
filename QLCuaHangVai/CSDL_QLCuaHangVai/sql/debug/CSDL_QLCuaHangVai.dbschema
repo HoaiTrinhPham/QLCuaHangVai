@@ -17,7 +17,7 @@
 			<Metadata Name="CompatibilityMode" Value="100" />
 		</CustomData>
 		<CustomData Category="Permissions" Type="XmlPermissions">
-			<Metadata Name="FileName" Value="E:\HK1-02\XUATNHAPTON\QLCUAHANGVAI\QLCUAHANGVAI\CSDL_QLCUAHANGVAI\PROPERTIES\DATABASE.SQLPERMISSIONS" />
+			<Metadata Name="FileName" Value="E:\HK1-02\QLNHANVIEN\QLCUAHANGVAI\QLCUAHANGVAI\CSDL_QLCUAHANGVAI\PROPERTIES\DATABASE.SQLPERMISSIONS" />
 		</CustomData>
 	</Header>
 	<Model>
