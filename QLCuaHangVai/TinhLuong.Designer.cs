@@ -59,6 +59,7 @@
             this.rdTungNV.TabStop = true;
             this.rdTungNV.Text = "Từng nhân viên";
             this.rdTungNV.UseVisualStyleBackColor = true;
+            this.rdTungNV.CheckedChanged += new System.EventHandler(this.rdTungNV_CheckedChanged);
             // 
             // groupBox1
             // 
@@ -81,6 +82,7 @@
             this.rdAll.TabIndex = 0;
             this.rdAll.Text = "Tất cả nhân viên";
             this.rdAll.UseVisualStyleBackColor = true;
+            this.rdAll.CheckedChanged += new System.EventHandler(this.rdAll_CheckedChanged);
             // 
             // label1
             // 
@@ -209,6 +211,7 @@
             this.Name = "TinhLuong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TinhLuong";
+            this.Load += new System.EventHandler(this.TinhLuong_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).EndInit();
