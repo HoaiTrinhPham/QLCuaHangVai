@@ -1,0 +1,17 @@
+E:\HK1-02\QLNhanVien\QLCuaHangVai\UnitTest\bin\Debug\UnitTest.dll.config
+E:\HK1-02\QLNhanVien\QLCuaHangVai\UnitTest\bin\Debug\UnitTest.dll
+E:\HK1-02\QLNhanVien\QLCuaHangVai\UnitTest\bin\Debug\UnitTest.pdb
+E:\HK1-02\QLNhanVien\QLCuaHangVai\UnitTest\bin\Debug\QLCuaHangVai.exe
+E:\HK1-02\QLNhanVien\QLCuaHangVai\UnitTest\bin\Debug\QLCuaHangVai.pdb
+E:\HK1-02\QLNhanVien\QLCuaHangVai\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
+E:\HK1-02\QLNhanVien\QLCuaHangVai\UnitTest\obj\Debug\UnitTest.DatabaseUnitTestsChamCong.resources
+E:\HK1-02\QLNhanVien\QLCuaHangVai\UnitTest\obj\Debug\UnitTest.DatabaseUnitTestsGetgioCong.resources
+E:\HK1-02\QLNhanVien\QLCuaHangVai\UnitTest\obj\Debug\UnitTest.DatabaseUnitTestsGetImage.resources
+E:\HK1-02\QLNhanVien\QLCuaHangVai\UnitTest\obj\Debug\UnitTest.DatabaseUnitTestsGetSP.resources
+E:\HK1-02\QLNhanVien\QLCuaHangVai\UnitTest\obj\Debug\UnitTest.DatabaseUnitTestsKiemTraHangTon.resources
+E:\HK1-02\QLNhanVien\QLCuaHangVai\UnitTest\obj\Debug\UnitTest.DatabaseUnitTestsLongin.resources
+E:\HK1-02\QLNhanVien\QLCuaHangVai\UnitTest\obj\Debug\UnitTest.DatabaseUnitTestsTTNhanVien.resources
+E:\HK1-02\QLNhanVien\QLCuaHangVai\UnitTest\obj\Debug\UnitTest.DatabaseUnitTestsXuatHang.resources
+E:\HK1-02\QLNhanVien\QLCuaHangVai\UnitTest\obj\Debug\UnitTest.csproj.GenerateResource.Cache
+E:\HK1-02\QLNhanVien\QLCuaHangVai\UnitTest\obj\Debug\UnitTest.dll
+E:\HK1-02\QLNhanVien\QLCuaHangVai\UnitTest\obj\Debug\UnitTest.pdb

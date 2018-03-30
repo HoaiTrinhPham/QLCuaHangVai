@@ -38,6 +38,7 @@ namespace QLCuaHangVai
 
         void loadDataMotNhanVien()
         {
+            tongLuong = 0;
             list = new List<NhanVien>();
             tool.connect();
             cmd = new SqlCommand("TTMotNhanVien", tool.con);
@@ -67,6 +68,7 @@ namespace QLCuaHangVai
 
         void loadData()
         {
+            tongLuong = 0;
             list = new List<NhanVien>();
             tool.connect();
             cmd = new SqlCommand("TTNhanVien", tool.con);
