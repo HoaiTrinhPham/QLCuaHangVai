@@ -1,0 +1,12 @@
+C:\Users\Huynh\Desktop\Clone\QLCuaHangVai-master\UnitTest\Fakes\QLCuaHangVai.fakes : warning : Cannot generate stub for QLCuaHangVai.Program: type is sealed.
+C:\Users\Huynh\Desktop\Clone\QLCuaHangVai-master\UnitTest\Fakes\QLCuaHangVai.fakes : warning : Cannot generate stub for ItemCB: type is not visible to exported or assembly(QLCuaHangVai.Fakes).
+C:\Users\Huynh\Desktop\Clone\QLCuaHangVai-master\UnitTest\Fakes\QLCuaHangVai.fakes : warning : Cannot generate stub for GridViewItem: type is not visible to exported or assembly(QLCuaHangVai.Fakes).
+C:\Users\Huynh\Desktop\Clone\QLCuaHangVai-master\UnitTest\Fakes\QLCuaHangVai.fakes : warning : Cannot generate stub for QLCuaHangVai.Properties.Resources: type is not visible to exported or assembly(QLCuaHangVai.Fakes).
+C:\Users\Huynh\Desktop\Clone\QLCuaHangVai-master\UnitTest\Fakes\QLCuaHangVai.fakes : warning : Cannot generate stub for QLCuaHangVai.Properties.Settings: type is sealed.
+C:\Users\Huynh\Desktop\Clone\QLCuaHangVai-master\UnitTest\Fakes\QLCuaHangVai.fakes : warning : Cannot generate stub for <>f__AnonymousType0`4: type is sealed.
+C:\Users\Huynh\Desktop\Clone\QLCuaHangVai-master\UnitTest\Fakes\QLCuaHangVai.fakes : warning : Cannot generate shim for QLCuaHangVai.Program: type is not visible to exported or assembly(QLCuaHangVai.Fakes).
+C:\Users\Huynh\Desktop\Clone\QLCuaHangVai-master\UnitTest\Fakes\QLCuaHangVai.fakes : warning : Cannot generate shim for ItemCB: type is not visible to exported or assembly(QLCuaHangVai.Fakes).
+C:\Users\Huynh\Desktop\Clone\QLCuaHangVai-master\UnitTest\Fakes\QLCuaHangVai.fakes : warning : Cannot generate shim for GridViewItem: type is not visible to exported or assembly(QLCuaHangVai.Fakes).
+C:\Users\Huynh\Desktop\Clone\QLCuaHangVai-master\UnitTest\Fakes\QLCuaHangVai.fakes : warning : Cannot generate shim for QLCuaHangVai.Properties.Resources: type is not visible to exported or assembly(QLCuaHangVai.Fakes).
+C:\Users\Huynh\Desktop\Clone\QLCuaHangVai-master\UnitTest\Fakes\QLCuaHangVai.fakes : warning : Cannot generate shim for QLCuaHangVai.Properties.Settings: type is not visible to exported or assembly(QLCuaHangVai.Fakes).
+C:\Users\Huynh\Desktop\Clone\QLCuaHangVai-master\UnitTest\Fakes\QLCuaHangVai.fakes : warning : Cannot generate shim for <>f__AnonymousType0`4: type is not supported because of internal limitations.

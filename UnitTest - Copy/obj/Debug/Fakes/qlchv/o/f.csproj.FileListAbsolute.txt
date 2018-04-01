@@ -1,0 +1,9 @@
+C:\Users\Huynh\Desktop\Clone\QLCuaHangVai-master\UnitTest\obj\Debug\Fakes\qlchv\b\QLCuaHangVai.Fakes.xml
+C:\Users\Huynh\Desktop\Clone\QLCuaHangVai-master\UnitTest\obj\Debug\Fakes\qlchv\b\QLCuaHangVai.Fakes.dll
+C:\Users\Huynh\Desktop\Clone\QLCuaHangVai-master\UnitTest\obj\Debug\Fakes\qlchv\b\QLCuaHangVai.Fakes.pdb
+C:\Users\Huynh\Desktop\Clone\QLCuaHangVai-master\UnitTest\obj\Debug\Fakes\qlchv\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Huynh\Desktop\Clone\QLCuaHangVai-master\UnitTest\obj\Debug\Fakes\qlchv\b\QLCuaHangVai.exe
+C:\Users\Huynh\Desktop\Clone\QLCuaHangVai-master\UnitTest\obj\Debug\Fakes\qlchv\b\QLCuaHangVai.pdb
+C:\Users\Huynh\Desktop\Clone\QLCuaHangVai-master\UnitTest\obj\Debug\Fakes\qlchv\o\f.csprojResolveAssemblyReference.cache
+C:\Users\Huynh\Desktop\Clone\QLCuaHangVai-master\UnitTest\obj\Debug\Fakes\qlchv\o\QLCuaHangVai.Fakes.dll
+C:\Users\Huynh\Desktop\Clone\QLCuaHangVai-master\UnitTest\obj\Debug\Fakes\qlchv\o\QLCuaHangVai.Fakes.pdb
