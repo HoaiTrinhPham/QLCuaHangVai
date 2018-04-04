@@ -49,22 +49,25 @@
             // 
             // nhậpKhoToolStripMenuItem
             // 
+            this.nhậpKhoToolStripMenuItem.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nhậpKhoToolStripMenuItem.Name = "nhậpKhoToolStripMenuItem";
-            this.nhậpKhoToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
+            this.nhậpKhoToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
             this.nhậpKhoToolStripMenuItem.Text = "Nhập Kho";
             this.nhậpKhoToolStripMenuItem.Click += new System.EventHandler(this.nhậpKhoToolStripMenuItem_Click);
             // 
             // xuấtKhoToolStripMenuItem
             // 
+            this.xuấtKhoToolStripMenuItem.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xuấtKhoToolStripMenuItem.Name = "xuấtKhoToolStripMenuItem";
-            this.xuấtKhoToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.xuấtKhoToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.xuấtKhoToolStripMenuItem.Text = "Xuất Kho";
             this.xuấtKhoToolStripMenuItem.Click += new System.EventHandler(this.xuấtKhoToolStripMenuItem_Click);
             // 
             // kiểmTraKhoToolStripMenuItem
             // 
+            this.kiểmTraKhoToolStripMenuItem.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kiểmTraKhoToolStripMenuItem.Name = "kiểmTraKhoToolStripMenuItem";
-            this.kiểmTraKhoToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
+            this.kiểmTraKhoToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
             this.kiểmTraKhoToolStripMenuItem.Text = "Kiểm tra kho";
             this.kiểmTraKhoToolStripMenuItem.Click += new System.EventHandler(this.kiểmTraKhoToolStripMenuItem_Click);
             // 
@@ -72,13 +75,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(761, 515);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "XuatNhapTonKho";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "XuatNhapTonKho";
+            this.Text = "Xuất Nhập Tồn";
+            this.Load += new System.EventHandler(this.XuatNhapTonKho_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

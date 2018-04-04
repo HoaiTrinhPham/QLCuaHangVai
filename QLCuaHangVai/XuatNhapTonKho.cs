@@ -38,5 +38,10 @@ namespace QLCuaHangVai
             t.MdiParent = this;
             t.Show();
         }
+
+        private void XuatNhapTonKho_Load(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
